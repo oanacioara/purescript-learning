@@ -59,4 +59,7 @@ you ca do:
 ```
 bobsName = _.name bob
 ```
-You don't need to define the function, you can use the property accessor shortcut.
+You don't need to define the function, you can use the property accessor shortcut. Property accessor functions are useful when performing operations on lists. For example:
+```
+listOfNames = map _.name persons
+```
