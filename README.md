@@ -1,6 +1,8 @@
 # purescript-learning
 
 ## Spago
+This is the package manager for `purescript`. Just like `npm` is the package manager for `node`.
+Usefull commands:
 ```
 spago build - compiles and builds
 spago test - runs the tests
@@ -8,11 +10,9 @@ spago install <package> - installs a package
 ```
 
 ## Types
-`Number`, `Int`, `String`, `Char`, `Boolean` <br/>
-`Array a`, `List a` <br/>
-
-## Records
-You can define a type:
+Basics: `Number`, `Int`, `String`, `Char`, `Boolean` <br/>
+Arrays&Lists: `Array a`, `List a` <br/>
+You can define a custom type:
 ```
 type CustomType
   { property1 :: String
