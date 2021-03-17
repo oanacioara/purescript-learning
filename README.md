@@ -26,11 +26,19 @@ record = { property1: 'SomeValue', property2: 3, property3: {...} }
 ```
 
 ## Functions
-Function definition: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`add :: Int -> Int -> Int` <br/>
-Function declaration: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`add x y = x + y` <br/>
-Inline function declaration: &nbsp;&nbsp;&nbsp;&nbsp;`\x y -> x + y` <br/>
-Calling a function: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`sum = add 5 7` <br/>
-<br/>
+A function that adds two numbers would look like this:
+```
+add :: Int -> Int -> Int
+add x y = x + y
+```
+You can inline the function like this:
+```
+\x y -> x + y
+```
+You can call the function like this:
+```
+sum = add 5 7
+```
 In purescript one would say that functions are `applied` to arguments. Each function has exactly 1 argument. After applying it, the result can be another function. This is called `currying`.<br/>
 So you could do this:
 ```
